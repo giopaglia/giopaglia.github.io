@@ -32,7 +32,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Giovanni Pagliarini
 subtitle: >-
-  PhD Student in Artificial Intelligence
+  PhD Student
 avatar: assets/images/avatar.jpg
 
 # You'll want to customize url and baseurl for your own site:
