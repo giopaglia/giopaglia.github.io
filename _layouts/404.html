@@ -2,11 +2,19 @@
 layout: default
 ---
 {%- include header.html scrolly_nav=_sections -%}
-
+#main>section {
+ text-align:center
+}
 <!-- Main -->
 <div id="main">
-	{%- if page.content != "" -%}
-		<h2>{{- page.title -}}</h2>
-		{%- if page.subtitle -%}<p>{{- page.subtitle -}}</p>{%- endif -%}
-	{%- endif -%}
+	<!-- Page -->
+	<article class="shade-two">
+	  <div class="container">
+			<header>
+				<h2>{{- page.title -}}</h2>
+				{%- if page.subtitle -%}<p>{{- page.subtitle -}}</p>{%- endif -%}
+			</header>
+	    {{- content -}}
+	  </div>
+	</article>
 </div>
