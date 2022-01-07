@@ -39,17 +39,19 @@ avatar: assets/images/avatar.jpg
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
-# https://jekyll.github.io/jekyll-seo-tag/usage/
 plugins:
   - jekyll-seo-tag
+
+# https://jekyll.github.io/jekyll-seo-tag/usage/
 # tagline: 
 description: >- # this means to ignore newlines until "baseurl:"
   Hi, my name is Giovanni Pagliarini and this is my webpage, where I showcase my professional background and expertise.
   I am a PhD student in Computer Science based in Ferrara, Italy, specialized in Artificial Intelligence.
+
 author:
   name: Giovanni Pagliarini
-  twitter: waldekm
   image: images/gio.jpg
+
 # email:
 # logo:
 social:
