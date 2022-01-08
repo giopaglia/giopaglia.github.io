@@ -5,6 +5,47 @@ order: 2
 ---
 
 <style>
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 2px dotted black;
+  cursor: help;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
 .flag-img {
     width: .8em;
     aspect-ratio: 4 / 3;
@@ -18,7 +59,11 @@ order: 2
 
 <p>
 <!-- <b>TL;DR</b> -->
-I'm an Italian student in computer science. Throughout 2015 and 2020, I've studied in Ferrara <img class="flag-img" src="gio/images/it.svg">, Gothenburg <img class="flag-img" src="gio/images/se.svg"> and Singapore <img class="flag-img" src="gio/images/sg.svg">, and I eventually specialized in <b>Machine Learning</b>. I'm now based in Ferrara, where I'm doing a PhD on <i>Interpretable</i> Machine Learning.
+I'm an Italian computer scientist. Throughout 2015 and 2020, I've studied in Ferrara <img class="flag-img" src="gio/images/it.svg">, Gothenburg <img class="flag-img" src="gio/images/se.svg"> and Singapore <img class="flag-img" src="gio/images/sg.svg">, and I eventually specialized in <b>Machine Learning</b>. I'm now based in Ferrara, where I'm doing a PhD on 
+<div class="tooltip"><i>Interpretable</i>
+  <span class="tooltiptext">Tooltip text</span>
+</div>
+ Machine Learning.
 My daily job is to analyze data, run machine learning sessions, and try to improve some aspects of my algorithms.
 <br />
 <!-- <blockquote>Leave binarism to computers!</blockquote> -->
