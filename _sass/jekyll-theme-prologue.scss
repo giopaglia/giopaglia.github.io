@@ -65,7 +65,8 @@
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		/*color: #888;*/
+		color: #6a6a6a;
 
 		&.is-loading * {
 			@include vendor('transition', 'none !important');
@@ -392,9 +393,11 @@
 		text-align: left;
 
 		tbody {
+			color: black;
 			tr {
 				&:nth-child(2n+2) {
-					background: #f4f4f4;
+					background: #f4f4f454;
+					/*background: #f4f4f4;*/
 				}
 			}
 		}
