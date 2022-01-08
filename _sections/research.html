@@ -7,7 +7,41 @@ redirect_from: /research
 
 
 <style>
-	h3 {
+	.check-list {
+	  margin: 0;
+	  padding-left: 1.2rem;
+	}
+
+	.check-list li {
+	  position: relative;
+	  list-style-type: none;
+	  padding-left: 2.5rem;
+	  margin-bottom: 0.5rem;
+	}
+
+	.check-list li:before {
+	    content: '';
+	    display: block;
+	    position: absolute;
+	    left: 0;
+	    top: -2px;
+	    width: 5px;
+	    height: 11px;
+	    border-width: 0 2px 2px 0;
+	    border-style: solid;
+	    border-color: #00a8a8;
+	    transform-origin: bottom left;
+	    transform: rotate(45deg);
+	}
+
+	/* Boilerplate stuff */
+	*,
+	*:before,
+	*:after {
+	  box-sizing: border-box;
+	}
+
+	h3, ul {
 		text-align: left;
 	}
 </style>
@@ -26,7 +60,7 @@ I'm involved in several research projects involving the application and formaliz
 
 <h3>Publications</h3>
 
-<ul>
+<ul class="check-list">
 	<li><a href="https://github.com/giopaglia/myshelve/raw/master/jbi2021.pdf" target="_blank">
 	Predicting Treatment Recommendation in Postmeopausal Osteoporosis</a>. <strong>Journal of Biomedical Informatics</strong> 118, 12:1 - 12:10. G. Bonaccorsi, M. Giganti, M. Nitsenko, G. Pagliarini, G. Piva, and G. Sciavicco.
 	</li>
