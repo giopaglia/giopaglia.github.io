@@ -41,7 +41,7 @@ url: "" # the base hostname & protocol for your site
 
 plugins:
   - jekyll-seo-tag
-
+  - jekyll-redirect-from
 # https://jekyll.github.io/jekyll-seo-tag/usage/
 # tagline: 
 description: >- # this means to ignore newlines until "baseurl:"
