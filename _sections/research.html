@@ -5,14 +5,14 @@ order: 4
 redirect_from: /research
 ---
 
-<div class="align_left" style="overflow-x: hidden">
+<div class="align_left" style="overflow: hidden">
 
 <p style="text-align:justify">I work on a few projects involving the <i>application</i> and <i>formalization</i> of new symbolic machine learning algorithms.
 The main research line revolves around the idea of equipping standard <i>decision trees</i> with the ability of performing temporal or spatial reasoning, so that they can <i>natively</i> handle time series, images, videos and, more generally, data that extends along temporal and/or spatial dimensions. This is done by adopting logical formalisms that are able to express entity-relation reasoning, for example, predicate logic or <i>modal logic</i>.
 The team I am working with is a mixture of logicians interested in modal logic and machine learning people interested in <i>interpretability</i>; we have been following this lead for three years, achieving remarkable results for some tasks of <i>time series classification</i> and <i>image classification</i>.
 </p>
 
-<a href="#" class="image featured"><img src="assets/images/pic08.jpg" alt="" /></a>
+<!-- <a href="#" class="image featured"><img src="assets/images/pic08.jpg" alt="" /></a> -->
 
 
 My work is supervised by <a href="https://sites.google.com/unife.it/guido">Prof. Guido Sciavicco</a>.
@@ -21,20 +21,7 @@ My work is supervised by <a href="https://sites.google.com/unife.it/guido">Prof.
 <!-- <h3>Publications<span style="color: #c4c4c4;font-size: smaller;padding-left: 2px;vertical-align: super;">(5)</span></h3> -->
 <h3>Publications<span style="color: #c4c4c4;font-size: x-large;padding-left: 2px;vertical-align: super;">(5)</span></h3>
 <!-- <p style="text-align: justify; margin-bottom: 0px;">During my first year of PhD, I co-authored these 5 publications! -->
-<script type="text/javascript">
-	$('#expand').click(function () {
-	    $('#pub').toggleClass('collapsed')
-	     // $(this).remove();
-	});
-</script>
-<style type="text/css">
-	.collapsed {
-		margin-bottom: -16em;
-	}
-	.expand {
-	    cursor:pointer
-	}
-</style>
+
 <ul id="pub" class="collapsed">
 	<li><a href="https://github.com/giopaglia/myshelve/raw/master/jbi2021.pdf" target="_blank">
 	Predicting Treatment Recommendation in Postmeopausal Osteoporosis</a>. <strong>Journal of Biomedical Informatics</strong> 118, 12:1 - 12:10. G. Bonaccorsi, M. Giganti, M. Nitsenko, G. Pagliarini, G. Piva, and G. Sciavicco.
@@ -51,8 +38,29 @@ My work is supervised by <a href="https://sites.google.com/unife.it/guido">Prof.
 	<li>A Modal Approach to Spatial Symbolic Learning. Proceedings of the <em>47th International Conference on Current Trends in Theory and Practice of Computer Science  (SRF 2021) - Student Research Forum</em>. G. Pagliarini and G. Sciavicco.</li>
 </ul>
 
-<input type="button" id="expand">
+<script type="text/javascript">
+	$('#expand').click(function () {
+	    $('#pub').toggleClass('collapsed')
+	     // $(this).remove();
+	});
+</script>
+<style type="text/css">
+	#pub.collapsed {
+		margin-bottom: -23em;
+	}
+	.expand {
+	    cursor:pointer
+	}
+	expand-arrow:before {
+   font-family: 'Glyphicons Halflings';
+   content: "\e114";
+   transition: all 0.5s;
+}
+</style>
 
+<div id="expand" style="height: 60px; background: red; display: block; text-align: center;">
+<div id="expand-arrow" style="width: 60px; background: blue; display: inline-block"></div>
+</div>
 <!-- <h3>Please, enjoy these relevant quotes</h3>
 <blockquote>
 “A model is only ever as good as its <i>explanations</i>” — <i>?</i> <!-- Gneo Pompeo -->
