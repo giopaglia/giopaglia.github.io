@@ -36,25 +36,28 @@ order: 2
 .popup {
 	display: inline;
 	position: relative;
-	left: -21em;
+	left: -16.2em;
 	top: -12px;
 }
 
 .popup-wr {
 	display: block;
-	position: relative;
+	position: absolute;
 	width: 26.8em;
+	top: -126px;
+  left: 0;
 }
 
 .popup-bg {
   filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.16))
     drop-shadow(0 3px 6px rgba(0, 0, 0, 0.23));
   position: absolute;
-  top: -126px;
+  left: 0;
+  /*top: -126px;*/
 }
 .popup-outline {
   position: absolute;
-  top: -126px;
+  /*top: -126px;*/
 }
 .popup-text {
   border-radius: 12px;
@@ -67,7 +70,8 @@ order: 2
   opacity: 0;
   padding: 0.1em 1.3em;
   position: absolute;
-	top: -104px;
+	/*top: -104px;*/
+	top: 29px;
   transition: opacity 240ms 120ms cubic-bezier(0.4, 0, 0.2, 1);
 	width: 26.8em;
   /*width: 292px;*/
