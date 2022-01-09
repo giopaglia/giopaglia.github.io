@@ -92,10 +92,10 @@
 	</style>
 
 	<script type="text/javascript">
-		$(function() {
-			$('.expand-bar').click(function () {
-		    $('section .to-be-collapsed').toggleClass('collapsed')
-		     // $(this).remove();
+		jQuery(function() {
+			jQuery('.expand-bar').click(function () {
+		    jQuery('section .to-be-collapsed').toggleClass('collapsed')
+		     // jQuery(this).remove();
 			});
 		});
 	</script>
@@ -115,6 +115,8 @@
 		    height: 190px;
 				padding: 0;
 				z-index: 1000;
+	      transition: all;
+	      /*transition: all 0.5s;*/
 		}
 		/*section .expand-bar expand-arrow:before {
 	   font-family: 'Glyphicons Halflings';
