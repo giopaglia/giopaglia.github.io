@@ -52,6 +52,43 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="gio/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="gio/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="gio/favicon/favicon-16x16.png">
-	
+	<style>
+
+		.align_left ul {
+		  line-height: 1.5em;
+		  margin: 5px 0 15px;
+		  padding: 0;
+		}
+
+		.align_left ul li {
+		  list-style: none;
+		  position: relative;
+		  padding: .85em 0 0 20px;
+		  /*padding: 0 0 0 20px;*/
+		}
+
+		.align_left ul li::before {
+	  content: "";
+	  position: absolute;
+	  left: 0;
+	  top: 6px;
+	  height: 5px;
+	  width: 5px;
+	  border: 1px solid #f9dd94;
+	  border-width: 2px 2px 0 0;
+	  transform: rotate(45deg);
+	}
+
+		/* Boilerplate stuff */
+		.align_left *,
+		.align_left *:before,
+		.align_left *:after {
+		  box-sizing: border-box;
+		}
+
+		.align_left h3, .align_left ul {
+			text-align: left;
+		}
+	</style>
   {% seo %}
 </head>
