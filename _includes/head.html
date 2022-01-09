@@ -112,6 +112,10 @@
 				z-index: 1000;
 	      /*transition: all 0.5s;*/
 		}
+
+		section:has(.expand-bar) + section, section:has(.expand-bar) + article {
+		    padding: 0 0;
+		}
 		/*section .expand-bar expand-arrow:before {
 	   font-family: 'Glyphicons Halflings';
 	   content: "\e114";
