@@ -37,6 +37,9 @@ order: 2
 
 .popup {
 	width: 20em;
+	display: inline;
+	position: relative;
+	left: -9em;
 }
 
 .popup-bg {
@@ -62,6 +65,8 @@ order: 2
   top: -117px;
   transition: opacity 240ms 120ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 292px;
+  
+  line-height: normal;
 }
 .tooltip:hover ~ .popup .popup-text {
   display: block;
