@@ -103,8 +103,11 @@
 		section .collapsed {
 			margin-bottom: -19em;
 		}
+		section:has(.expand-bar) {
+			padding-bottom: 0;
+		}
 		section .expand-bar {
-		    cursor:pointer
+		    cursor:pointer;
 		    background-image: linear-gradient(to bottom, #d2d2d200 , #c8c8c8);
 		    height: 190px;
 				position: relative;
