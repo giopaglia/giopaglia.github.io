@@ -90,5 +90,25 @@
 			text-align: left;
 		}
 	</style>
+
+	<script type="text/javascript">
+		$('.expand-bar').click(function () {
+		    $('section .to-be-collapsed').toggleClass('collapsed')
+		     // $(this).remove();
+		});
+	</script>
+	<style type="text/css">
+		section .collapsed {
+			margin-bottom: -23em;
+		}
+		section .expand-bar {
+		    cursor:pointer
+		}
+		section .expand-bar expand-arrow:before {
+	   font-family: 'Glyphicons Halflings';
+	   content: "\e114";
+	   transition: all 0.5s;
+	}
+	</style>
   {% seo %}
 </head>

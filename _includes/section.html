@@ -1,8 +1,9 @@
 {%- comment -%}
   Include vars:
 	title
-	quote
   subtitle
+	quote
+	expand-bar
 	photo
 	photo-alt
 	auto-header
@@ -47,3 +48,9 @@
     {{- include.content -}}
   </div>
 </section>
+
+{%- if include.expand-bar -%}
+<div class="expand-bar" style="height: 60px; background: red;">
+<div class="expand-arrow" style="/*! width: 60px; */ background: blue; display: inline-block"></div>
+</div>
+{%- endif -%}
