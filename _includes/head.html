@@ -98,6 +98,9 @@
 		section:has(.expand-bar) {
 			padding-bottom: 0;
 		}
+		section .to-be-collapsed {
+	    transition: all 0.5s;
+	  }
 		section .expand-bar {
 		    cursor:pointer;
 		    background-image: linear-gradient(to bottom, #d2d2d200 , #c8c8c8);
@@ -107,7 +110,6 @@
 		    height: 190px;
 				padding: 0;
 				z-index: 1000;
-	      transition: all;
 	      /*transition: all 0.5s;*/
 		}
 		/*section .expand-bar expand-arrow:before {
