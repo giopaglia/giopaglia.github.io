@@ -13,3 +13,12 @@ layout: default
 		{%- include section.html title=_section.title subtitle=_section.subtitle quote=_section.quote expand-bar=_section.expand-bar photo=_section.cover-photo photo-alt=_section.cover-photo-alt auto-header=_section.auto-header content=_section.content -%}
 	{%- endfor -%}
 </div>
+
+<script type="text/javascript">
+	$(function() {
+		$('.expand-bar').click(function () {
+	    $('section .to-be-collapsed').toggleClass('collapsed')
+	     // jQuery(this).remove();
+		});
+	});
+</script>
