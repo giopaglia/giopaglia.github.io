@@ -92,9 +92,11 @@
 	</style>
 
 	<script type="text/javascript">
-		jQuery('.expand-bar').click(function () {
-		    jQuery('section .to-be-collapsed').toggleClass('collapsed')
-		     // jQuery(this).remove();
+		$(function() {
+			$('.expand-bar').click(function () {
+		    $('section .to-be-collapsed').toggleClass('collapsed')
+		     // $(this).remove();
+			});
 		});
 	</script>
 	<style type="text/css">
