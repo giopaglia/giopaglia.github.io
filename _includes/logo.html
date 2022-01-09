@@ -1,8 +1,59 @@
 <!-- Logo -->
+<style>
+	
+	.image {
+		display: block;
+		border: 0;
+		text-align: center;
+
+		img {
+			display: inline-block;
+			width: 80%;
+		}
+
+		&.avatar-gio {
+			width: 48px;
+			height: 48px;
+			background: #f00;
+		}
+
+		&.fit {
+			display: block;
+			width: 100%;
+		}
+
+		&.featured {
+			display: block;
+			width: 100%;
+			margin: 0 0 2em 0;
+		}
+
+		&.left {
+			float: left;
+			margin: 0 2em 2em 0;
+		}
+
+		&.right {
+			float: right;
+			margin: 0 0 2em 2em;
+		}
+
+		&.centered {
+			display: block;
+			margin: 0 0 2em 0;
+
+			img {
+				margin: 0 auto;
+				width: auto;
+			}
+		}
+	}
+</style>
+
 <div id="logo">
   <a href="{{- '/' | absolute_url -}}" id="home-link">
     <h1 id="title">{{- site.title -}}</h1>
     <p>{{- site.subtitle -}}</p>
-    <span class="image avatar48"><img src="{{- site.avatar | relative_url -}}" alt="{{- site.author | default: 'unknown author' | prepend: 'Image of ' -}}" /></span>
+    <span class="image avatar-gio"><img src="{{- site.avatar | relative_url -}}" alt="{{- site.author | default: 'unknown author' | prepend: 'Image of ' -}}" /></span>
   </a>
 </div>
