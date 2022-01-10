@@ -46,8 +46,9 @@ plugins:
 # https://jekyll.github.io/jekyll-seo-tag/usage/
 # tagline: 
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi, my name is Giovanni Pagliarini and this is my webpage, where I showcase my professional background and expertise.
-  I am a PhD student in Computer Science based in Ferrara, Italy, specialized in Artificial Intelligence.
+  Hi! I am a PhD student in Computer Science based in Ferrara, Italy, specialized in Artificial Intelligence.
+  This is my webpage, where I showcase my professional background and expertise.
+keywords: Giovanni Pagliarini, Ferrara, Università, Unife, Unipr, Interpretable Machine Learning, Artificial Intelligenc, PhD Student
 
 author: Giovanni Pagliarini
 # author:
