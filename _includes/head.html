@@ -18,15 +18,12 @@
 
   <title>{{- _page_title -}}</title>
   <!-- <meta name="description" content="{{- _page_description -}}" /> -->
-  <meta name="author" content='{{- site.author -}}' />
+  <meta name="author" content='{{- site.author | escape -}}' />
   
 	<!-- Open Graph -->
-  <meta property="og:title" content="{{- _page_title -}}" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="{{- site.avatar | absolute_url -}}" />
   <meta property="og:url" content="{{- page.url | absolute_url -}}" />
-  <meta property="og:site_name" content="{{- site.title | escape -}}" />
-  <!-- <meta property="og:description" content="{{- _page_description -}}" /> -->
   
   <!-- Styles -->
   <meta charset="utf-8" />
@@ -51,7 +48,6 @@
   <!-- Gio -->
 
   <meta name="keywords" content="{{ site.keywords }}">
-  <meta name="google-site-verification" content="{{ site.google_site_verification }}">
 	<link rel="apple-touch-icon" sizes="180x180" href="gio/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="gio/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="gio/favicon/favicon-16x16.png">
