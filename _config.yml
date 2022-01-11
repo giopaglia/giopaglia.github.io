@@ -33,8 +33,7 @@
 title: Giovanni Pagliarini
 subtitle: >-
   PhD Student
-# avatar: assets/images/avatar.jpg
-avatar: gio/images/gio.jpg
+avatar: gio/images/gio.webp
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "/" # the subpath of your site, e.g. /blog
@@ -53,7 +52,7 @@ keywords: Giovanni Pagliarini, Ferrara, Università, Unife, Unipr, Interpretable
 author: Giovanni Pagliarini
 # author:
 #   name: Giovanni Pagliarini
-#   image: gio/images/gio.jpg
+#   image: gio/images/gio.webp
 
 # email:
 # logo:
