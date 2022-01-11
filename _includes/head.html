@@ -32,6 +32,7 @@
 
   <noscript><link rel="stylesheet" href="styles.css"></noscript>
 
+  <!-- https://web.dev/defer-non-critical-css/ -->
   <link rel="preload" href="{{- 'assets/css/main.css' | relative_url -}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <!-- <link rel="stylesheet" href="{{- 'assets/css/main.css' | relative_url -}}" /> -->
   <!--[if lte IE 8]><link rel="stylesheet" href="{{- 'assets/css/ie8.css' | relative_url -}}" /><![endif]-->
