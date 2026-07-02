@@ -31,8 +31,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Giovanni Pagliarini
-subtitle: >-
-  PhD in Computer Science
+subtitle: Computer Scientist
 avatar: gio/images/gio.webp
 
 # You'll want to customize url and baseurl for your own site:
@@ -45,8 +44,8 @@ plugins:
 # https://jekyll.github.io/jekyll-seo-tag/usage/
 # tagline: 
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi! I am a PhD in Computer Science based in Ferrara, Italy, specialized in Artificial Intelligence.
-  This is my webpage, where I showcase my professional background and expertise.
+  Hi! I am computer scientist based in Ferrara, Italy, specialized in Machine Learning.
+  In this webpage I showcase my professional background and expertise.
 keywords: Machine Learning, Artificial Intelligence, Ferrara, Università, Unife, Giovanni Pagliarini, PhD
 
 author: Giovanni Pagliarini
