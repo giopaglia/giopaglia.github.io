@@ -5,11 +5,17 @@ layout: default
 {% assign sections = site.sections | sort: 'order' %}
 {% for section in sections %}
 {% unless section.hide %}
+	{% if section.hero %}
+	<section id="{{ section.slug | default: section.title | slugify }}" class="hero" style="background-image: url('{{ section.cover-photo | relative_url }}')">
+		{{ section.content }}
+	</section>
+	{% else %}
 	<section id="{{ section.slug | default: section.title | slugify }}">
 		{% unless section.auto-header == "none" %}
 		<h2>{{ section.title }}</h2>
 		{% endunless %}
 		{{ section.content }}
 	</section>
+	{% endif %}
 {% endunless %}
 {% endfor %}

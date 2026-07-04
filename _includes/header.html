@@ -1,6 +1,8 @@
 <!-- Header -->
 	<header id="header">
+		{% if site.avatar %}
 		<a href="#top" class="image avatar"><img src="{{ site.avatar | relative_url }}" alt="{{ site.author }}" /></a>
+		{% endif %}
 		<h1 class="name"><strong>{{ site.title }}</strong></h1>
 		<p class="job">{{ site.subtitle }}</p>
 		<!-- <h1 class="tagline"><strong>Welcome</strong> to my webpage!<br />
@@ -9,7 +11,7 @@
 			<ul>
 				{% assign sections = site.sections | sort: 'order' %}
 				{% for section in sections %}
-				{% unless section.hide %}
+				{% unless section.hide or section.hero %}
 				<li><a href="#{{ section.slug | default: section.title | slugify }}">{{ section.nav-title | default: section.title }}</a></li>
 				{% endunless %}
 				{% endfor %}

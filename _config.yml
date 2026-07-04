@@ -1,7 +1,7 @@
 # Site settings
 title: Giovanni Pagliarini
 subtitle: Computer Scientist
-avatar: gio/images/gio-zoom.jpg
+# avatar: gio/images/gio-zoom.jpg
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://giopaglia.github.io" # the base hostname & protocol for your site
@@ -47,3 +47,6 @@ exclude:
   - README.md
   - LICENSE.txt
   - vendor
+  - old
+  - new
+  - TODO
