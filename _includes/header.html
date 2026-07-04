@@ -1,15 +1,26 @@
-{%- comment -%}
-  Include vars:
-  scrolly_nav
-{%- endcomment -%}
-
 <!-- Header -->
-<div id="header">
-  <div class="top">
-    {%- include logo.html -%}
-    {%- include nav.html section_items=include.scrolly_nav -%}
-  </div>
-  <div class="bottom">
-    {%- include social_icons.html -%}
-  </div>
-</div>
+	<header id="header">
+		<a href="#top" class="image avatar"><img src="{{ site.avatar | relative_url }}" alt="{{ site.author }}" /></a>
+		<h1 class="name"><strong>{{ site.title }}</strong></h1>
+		<p class="job">{{ site.subtitle }}</p>
+		<!-- <h1 class="tagline"><strong>Welcome</strong> to my webpage!<br />
+		I'm based in <i>Ferrara, Italy</i>.</h1> -->
+		<nav id="sidebar-nav">
+			<ul>
+				{% assign sections = site.sections | sort: 'order' %}
+				{% for section in sections %}
+				{% unless section.hide %}
+				<li><a href="#{{ section.slug | default: section.title | slugify }}">{{ section.nav-title | default: section.title }}</a></li>
+				{% endunless %}
+				{% endfor %}
+			</ul>
+		</nav>
+		<div class="sidebar-contact">
+			<ul class="cv-buttons">
+				<li><a href="{{ 'gio/Giovanni-Pagliarini-CV-en-latest.pdf' | relative_url }}" title="Download my CV (English)" target="_blank"><span class="fa fa-file-pdf-o"></span>&nbsp; CV (EN)</a></li>
+				<li><a href="{{ 'gio/Giovanni-Pagliarini-CV-it-latest.pdf' | relative_url }}" title="Download my CV (Italian)" target="_blank"><span class="fa fa-file-pdf-o"></span>&nbsp; CV (IT)</a></li>
+			</ul>
+			<p class="email"><a href="#" id="email-link" data-u="inirailgap.innavoig" data-d="moc.loa" title="Send me an email">giovanni.pagliarini☀️aol.com</a></p>
+		</div>
+		{% include footer.html %}
+	</header>

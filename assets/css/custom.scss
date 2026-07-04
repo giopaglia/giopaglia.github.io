@@ -1,0 +1,179 @@
+---
+# Site-specific overrides, compiled by Jekyll on top of the stock Strata main.css
+---
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
+}
+
+/* Breathing room after the last section */
+#main {
+	padding-bottom: 8em;
+}
+
+/* Slimmer fixed sidebar on desktop (theme default is 35%),
+   with extra whitespace to the left of the sections */
+@media screen and (min-width: 1281px) {
+	#header {
+		padding: 6em 3em 0 0;
+		width: 26%;
+	}
+
+	#main {
+		margin-left: 26%;
+		max-width: 59em;
+		padding-left: 7em;
+		width: calc(100% - 26%);
+	}
+
+	#footer {
+		width: 26%;
+	}
+}
+
+/* The footer (social icons) now lives inside the sidebar header, in flow:
+   no more overlap with the sidebar content when zoomed in */
+#header #footer {
+	background: none;
+	bottom: auto;
+	left: auto;
+	padding: 2em 0 2.5em 0;
+	position: static;
+	width: auto;
+}
+
+/* Whenever the sidebar is fixed, let it scroll if its content is taller
+   than the viewport (e.g. zoomed in). Flexbox pushes the icons to the
+   bottom when there is room, and lets them flow naturally when there isn't */
+@media screen and (min-width: 981px) {
+	#header {
+		display: flex;
+		flex-direction: column;
+		overflow-y: auto;
+
+		> * {
+			flex-shrink: 0;
+		}
+
+		> .image.avatar {
+			align-self: flex-end;
+		}
+
+		#footer {
+			margin-top: auto;
+		}
+	}
+}
+
+#header {
+
+	.image.avatar {
+		width: 9.5em;
+	}
+
+	h1.name {
+		color: #ffffff;
+		font-size: 1.5em;
+		line-height: 1.2;
+		margin: 0 0 0.25em 0;
+	}
+
+	p.job {
+		color: rgba(255, 255, 255, 0.65);
+		font-size: 0.9em;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+		margin: 0 0 1.5em 0;
+	}
+
+	h1.tagline {
+		font-size: 1em;
+	}
+
+	nav#sidebar-nav {
+		margin-top: 2em;
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			margin: 0.5em 0;
+			padding: 0;
+		}
+
+		a {
+			border: 0;
+			border-right: 2px solid transparent;
+			color: rgba(255, 255, 255, 0.5);
+			display: inline-block;
+			padding-right: 0.75em;
+			margin-right: -0.75em;
+			text-decoration: none;
+			letter-spacing: 0.05em;
+			transition: color 0.2s ease, border-color 0.2s ease;
+
+			&:hover {
+				color: #49bf9d;
+			}
+
+			&.active {
+				border-right-color: #49bf9d;
+				color: #ffffff;
+			}
+		}
+	}
+
+	.sidebar-contact {
+		margin-top: 2em;
+
+		ul.cv-buttons {
+			list-style: none;
+			margin: 0 0 0.75em 0;
+			padding: 0;
+
+			li {
+				display: inline-block;
+				margin-left: 0.5em;
+				padding: 0;
+			}
+
+			a {
+				border: 1px solid rgba(255, 255, 255, 0.25);
+				border-radius: 4px;
+				color: rgba(255, 255, 255, 0.65);
+				display: inline-block;
+				font-size: 0.85em;
+				padding: 0.35em 0.9em;
+				text-decoration: none;
+				transition: color 0.2s ease, border-color 0.2s ease;
+
+				&:hover {
+					border-color: #49bf9d;
+					color: #ffffff;
+				}
+			}
+		}
+
+		p.email {
+			color: rgba(255, 255, 255, 0.5);
+			font-size: 0.85em;
+			margin: 0;
+
+			a {
+				border: 0;
+				color: inherit;
+				text-decoration: none;
+				transition: color 0.2s ease;
+
+				&:hover {
+					color: #ffffff;
+				}
+			}
+		}
+	}
+}

@@ -1,17 +1,28 @@
+<!DOCTYPE HTML>
 <!--
-	Welcome to the source code of my webpage!
-	In case you are wondering, I am using the *Prologue* template from html5up.net.
-	Shoutout to the original author @ajlkn: https://aj.lkn.io/
-	&
-	to Chris Bobbe for the Jekyll integration: https://chrisbobbe.github.io/jekyll-theme-prologue/
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<html lang="{{ site.locale | slice: 0, 2 | default: 'en' }}">
+	{% include head.html %}
+	<body id="top">
 
-<!DOCTYPE HTML>
-<html>
-	{%- include head.html -%}
-	<body>
-		{{- content -}}
-		{%- include footer.html -%}
+		{% include header.html %}
+
+		<!-- Main -->
+			<div id="main">
+				{{ content }}
+			</div>
+
+		<!-- Scripts -->
+			<script src="{{ 'assets/js/jquery.min.js' | relative_url }}"></script>
+			<script src="{{ 'assets/js/jquery.poptrox.min.js' | relative_url }}"></script>
+			<script src="{{ 'assets/js/skel.min.js' | relative_url }}"></script>
+			<script src="{{ 'assets/js/util.js' | relative_url }}"></script>
+			<script src="{{ 'assets/js/main.js' | relative_url }}"></script>
+			<script src="{{ 'assets/js/scrollspy.js' | relative_url }}"></script>
+			<script src="{{ 'assets/js/email.js' | relative_url }}"></script>
+
 	</body>
 </html>

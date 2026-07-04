@@ -1,5 +1,6 @@
 /_site
 *.gem
 .sass-cache
-Gemfile.lock
+vendor/
+.bundle/
 TODO

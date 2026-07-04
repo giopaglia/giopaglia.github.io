@@ -1,60 +1,23 @@
-# Developer's Note: This is a sample _config.yml file offered with
-# jekyll-theme-prologue for your convenience. To use it, move it to your
-# project's root directory. Please note that the following lines are
-# NECESSARY for Prologue to work correctly:
-#
-# theme: jekyll-theme-prologue
-# collections: [sections]
-#
-# They activate the theme and tell Jekyll to find your homepage content
-# in /_sections. Note where "sections" starts with an underscore
-# and where it doesn't. The social settings will make links to
-# Twitter, etc., but only if you give the URL.
-#
-# Also, be sure to customize url and baseurl for your site.
-#
-# ---------------------------------------------------------------
-#
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: Giovanni Pagliarini
 subtitle: Computer Scientist
-avatar: gio/images/gio.webp
+avatar: gio/images/gio-zoom.jpg
 
-# You'll want to customize url and baseurl for your own site:
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://giopaglia.github.io" # the base hostname & protocol for your site
 
 plugins:
   - jekyll-seo-tag
   - jekyll-redirect-from
+
 # https://jekyll.github.io/jekyll-seo-tag/usage/
-# tagline: 
-description: >- # this means to ignore newlines until "baseurl:"
-  Hi! I am computer scientist based in Ferrara, Italy, specialized in Machine Learning.
-  In this webpage I showcase my professional background and expertise.
+description: >-
+  Hi! I am a computer scientist based in Ferrara, Italy, specialized in machine learning.
+  On this webpage I showcase my professional background and expertise.
 keywords: Machine Learning, Artificial Intelligence, Ferrara, Università, Unife, Giovanni Pagliarini, PhD
 
 author: Giovanni Pagliarini
-# author:
-#   name: Giovanni Pagliarini
-#   image: gio/images/gio.webp
 
-# email:
-# logo:
 social:
   name: Giovanni Pagliarini
   links:
@@ -65,23 +28,22 @@ locale: en_US
 
 google_site_verification: bpEYa_056Wj8d49--wSVlPfApefNRqaZcu1UBYaE8cQ
 
-# Social settings
-# Make sure to include the full url including protocol, e.g. https://github.com/chrisbobbe
-twitter_url:
-facebook_url:
-googleplus_url:
-instagram_url:
+# Social links (rendered in the footer)
 linkedin_url: http://linkedin.com/in/giovanni-pagliarini
 github_url: https://github.com/giopaglia
-stackoverflow_url:
-pinterest_url:
-slack_url:
-dribbble_url:
 
 # Google Analytics Tracking ID goes here:
 google_analytics: G-GE36XVRZEX
 
-# The following settings are NECESSARY for the Prologue theme to run:
-# theme: jekyll-theme-prologue
-remote_theme: chrisbobbe/jekyll-theme-prologue
+# Homepage sections live in _sections/, ordered by their `order` front matter
 collections: [sections]
+
+sass:
+  quiet_deps: true
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE.txt
+  - vendor

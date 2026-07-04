@@ -1,35 +1,11 @@
-<style>
-
-	#footer blockquote {
-		margin-top: -3px;
-		margin-left: 0;
-		border-left: none;
-		
-		padding:  0em 0 0em 2em;
-	}
-
-</style>
-
-<!-- Footer -->
-<div id="footer">
-  
-  <blockquote>
-  “A person is only ever as strong as the people around them” <!--  — <i>?</i>  --><!-- Gneo Pompeo -->
-  </blockquote>
-
-  <!-- Copyright -->
-  <ul class="copyright">
-    <!-- {% if site.title or site.author %}
-      <li>&copy; {{- site.title | default: site.author -}}. All rights reserved.</li>
-    {% endif %}
-    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-    <li>Jekyll integration: <a href="https://chrisbobbe.github.io/">Chris Bobbe</a></li> -->
-<li>
-<a href="https://alberto-paparella.github.io/" target="_blank">Alberto Paparella</a> &middot; 
-<a href="https://eduardstan.github.io/" target="_blank">Ionel Eduard Stan</a> &middot;
-<a href="https://ferdiu.it/en/" target="_blank">Federico Manzella</a> &middot;
-<a href="https://pietropoluzzi.it/" target="_blank">Pietro Poluzzi</a>
-</li>
-  </ul>
-  
-</div>
+<!-- Footer (lives inside the sidebar header) -->
+	<div id="footer">
+		<ul class="icons">
+			{% if site.github_url %}<li><a title="Visit my coding projects" href="{{ site.github_url }}" class="icon fa-github" target="_blank" rel="noopener"><span class="label">GitHub</span></a></li>{% endif %}
+			{% if site.linkedin_url %}<li><a title="Visit my profile" href="{{ site.linkedin_url }}" class="icon fa-linkedin" target="_blank" rel="noopener"><span class="label">LinkedIn</span></a></li>{% endif %}
+			<li><a title="Visit my research publications" href="https://scholar.google.com/citations?user=FRo4yrcAAAAJ" class="icon fa-graduation-cap" target="_blank" rel="noopener"><span class="label">Google Scholar</span></a></li>
+		</ul>
+		<!-- <ul class="copyright">
+			<li>&copy; {{ site.author }}</li>
+		</ul> -->
+	</div>
