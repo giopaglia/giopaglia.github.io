@@ -4,7 +4,7 @@ subtitle: Computer Scientist
 # avatar: gio/images/gio-zoom.jpg
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://giopaglia.github.io" # the base hostname & protocol for your site
+url: "https://giopaglia.xyz" # the base hostname & protocol for your site
 
 plugins:
   - jekyll-seo-tag
